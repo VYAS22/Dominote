@@ -3,7 +3,7 @@ import librosa
 import numpy as np
 
 #Load audio file
-y, sr = librosa.load("your_audio_file.wav")
+y, sr = librosa.load("audio.wav")
 
 #Compute CQT
 C = librosa.cqt(y, sr=sr)
