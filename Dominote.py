@@ -2,10 +2,14 @@ import pandas as pd
 import numpy as np
 import array
 pd.set_option('display.max_rows', 200)
-df = pd.read_csv('data.dat')  # Reading midicsv output file to dataframe
+
+# Reading midicsv output file to dataframe
+df = pd.read_csv('data.dat')  
 df1 = df.iloc[:, :5]
 df2 = df.iloc[:, 5:]
-print(df)  # printing the data frame
+
+# printing the data frame
+print(df)  
 type(df)
 df.shape
 df.info()
@@ -22,6 +26,8 @@ col4 = df['col4']
 NoteNr = df['NoteNr']
 NoteValo = df['NoteValo']
 pd.set_option('display.max_rows', 200)
+
+#Grouping the frequencies of events by note number
 gd = df.groupby(NoteNr).size()
 print(gd)
 df = gd
