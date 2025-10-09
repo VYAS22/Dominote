@@ -2,7 +2,7 @@ import pandas as pd
 import numpy
 
 pd.set_option('display.max_rows', 200)
-df = pd.read_csv('data.dat')  # Reading midicsv output file to dataframe
+df = pd.read_csv('data.dat', header = None)  # Reading midicsv output file to dataframe
 df1 = df.iloc[:, :5]
 df2 = df.iloc[:, 5:]
 
@@ -27,3 +27,4 @@ pd.set_option('display.max_rows', 200)
 gd = df.groupby(NoteNr).size()
 print(gd)
 gd.to_csv("c:\\users\\ruchi\\onedrive\\midiraga\\code\\data02.csv",)
+
