@@ -13,4 +13,4 @@ with open('data03.csv', 'r') as data03:
 
 print(Note_Number)
 
-    # Note_Number.to_csv("c:\\users\\ruchi\\onedrive\\midiraga\\code\\data03.csv",inxed=True)
+## Note_Number.to_csv("c:\\users\\ruchi\\onedrive\\midiraga\\code\\data03.csv", index=True)
